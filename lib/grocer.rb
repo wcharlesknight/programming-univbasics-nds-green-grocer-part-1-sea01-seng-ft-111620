@@ -17,8 +17,9 @@ end
 def consolidate_cart(cart) 
   new_cart = []
   cart.each do |items|
-    if new_cart == []
-      new_cart << items
+    if items[:item] ==
+     
+        
     end
   end
   binding.pry 
