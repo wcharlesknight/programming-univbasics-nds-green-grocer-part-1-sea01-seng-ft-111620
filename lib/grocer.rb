@@ -15,7 +15,7 @@ end
 
 
 def consolidate_cart(cart)
-  cart.each_with_object([]) do |(key, value) , new_cart|
+  cart.each_with_object({}) do |(item) , new_cart|
   binding.pry
   end   
 end
