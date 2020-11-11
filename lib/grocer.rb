@@ -17,16 +17,8 @@ end
 def consolidate_cart(cart)
  new_cart = []
  cart.each do |item|
-   item.each do |key, value|
-     if new_cart[key].nil?
-       new_cart[key] = item.merge({:count => 1 })
-     else
-       new_cart[key][:count] += 1
-     end
-   end
-   binding.pry 
- end
- new_cart 
+ binding.pry 
+ end 
 end 
 
 
