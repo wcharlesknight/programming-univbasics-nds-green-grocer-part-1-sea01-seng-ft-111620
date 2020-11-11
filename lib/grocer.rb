@@ -16,22 +16,19 @@ end
 
 def consolidate_cart(cart)
   new_cart = []
-  cart.each do |items|
-    new_cart_item = items
-    if new_cart_item 
+  i = 0
+  while i < cart.length do
+    new_cart_item = find_item_by_name_in_collection(cart[i][:item], new_cart)
+    if new_cart_item != nil
       new_cart_item[:count] += 1
-    else 
-      new_cart_item = {
-        :item => cart[counter][:item], 
-        :price => cart[counter][:price],
-        :clearance => cart[counter][:clearance],
-        :count => 1 
-      }
-      new_cart << new_cart_item 
-    end
-  end 
-  new_cart 
- end
+    else
+      cart[i][:count] = 1
+      new_cart << cart[i]
+    end   
+    i += 1
+  end  
+  new_cart
+end
  
 
 
