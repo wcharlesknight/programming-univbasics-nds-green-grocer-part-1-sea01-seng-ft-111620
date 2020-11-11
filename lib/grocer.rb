@@ -16,6 +16,8 @@ end
 
 def consolidate_cart(cart)
   cart.each_with_object([]) do |(key, value) , new_cart|
+  binding.pry
+  end   
 end
 
 
