@@ -24,8 +24,8 @@ def consolidate_cart(cart)
        new_cart[name][:count] += 1
      end
    end
-   binding.pry 
- end 
+ end
+ new_cart 
 end 
 
 
