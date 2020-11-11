@@ -18,7 +18,7 @@ def consolidate_cart(cart)
   new_cart = []
   index = 0 
   while index < cart.length do
-    if cart[index][:item] != new_cart
+    if cart[index][:item] != new_car[index][:item]
       cart[index][:count] = 1 
       new_cart << cart[index]
     else
