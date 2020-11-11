@@ -16,7 +16,8 @@ end
 
 def consolidate_cart(cart)
  cart.each_with_object([]) do |(item) , new|
-  binding.pry 
+  binding.pry
+ end   
 end
 
 
