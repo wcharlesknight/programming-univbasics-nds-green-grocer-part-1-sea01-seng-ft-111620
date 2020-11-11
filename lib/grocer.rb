@@ -19,7 +19,7 @@ def consolidate_cart(cart)
  cart.each do |item_list|
    item_list.each do |item, value|
      new_cart[item] ||= value
-     new_cart[item][:count] ? new_cart[item][:count] += 1 
+     new_cart[item][:count] ? new_cart[item][:count] += 1 :
      new_cart[item][:count] = 1 
   end 
 end
