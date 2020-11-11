@@ -19,8 +19,8 @@ def consolidate_cart(cart)
    if !item[:item]
     item[:count] = 1
     new_cart << item
+    binding.pry 
    end
-   binding.pry 
   end   
 end
 
