@@ -15,8 +15,12 @@ end
 
 
 def consolidate_cart(cart)
-  cart.each_with_object({}) do |(item) , new_cart|
-  binding.pry
+  cart.each_with_object([]) do |(item) , new_cart|
+   if !item[:item]
+    item[:count] = 1
+    new_cart << item 
+    binding.pry 
+   end    
   end   
 end
 
