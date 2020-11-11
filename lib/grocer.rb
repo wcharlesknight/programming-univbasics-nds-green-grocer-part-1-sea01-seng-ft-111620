@@ -17,6 +17,9 @@ end
 def consolidate_cart(cart)
  new_cart = {}
  cart.each do |item|
+   item.each do |key, value|
+     if 
+ 
  binding.pry  
  end   
 end
