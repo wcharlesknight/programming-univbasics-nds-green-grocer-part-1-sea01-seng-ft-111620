@@ -14,17 +14,17 @@ item
 end
 
 
-def consolidate_cart(cart)
- new_cart = {}
- cart.each do |item_list|
-   item_list.each do |item, value|
-     new_cart[item] ||= value
-     new_cart[item][:count] ? new_cart[item][:count] += 1 :
-     new_cart[item][:count] = 1 
-     binding.pry 
-   end 
- end
+def consolidate_cart(cart) 
+  new_cart = {} 
+  cart.each do |items_array| 
+    items_array.each do |item, attribute_hash| 
+      new_cart[item] ||= attribute_hash 
+      new_cart[item][:count] ? new_cart[item][:count] += 1 :   
+      new_cart[item][:count] = 1 
+  end 
 end 
+new_cart 
+end
 
 
 
