@@ -19,7 +19,10 @@ def consolidate_cart(cart)
   index = 0 
   while index < cart.length do 
     if cart[index][:item] != new_cart
+      cart[index][:count] = 1 
       new_cart << cart[index]
+    else
+      new_cart[index][:count] += 1 
     end
     index += 1 
   end
