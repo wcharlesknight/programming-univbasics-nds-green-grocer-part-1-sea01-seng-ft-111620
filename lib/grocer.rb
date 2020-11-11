@@ -15,19 +15,10 @@ end
 
 
 def consolidate_cart(cart)
- final = Hash.new 0 
- count = :count
- cart.each do |hash|
-  hash.each do |food, description|
-   if final.has_key?(food) == false
-    final[food] = description
-    final[food][count] = 1
-   elsif final.has_key?(food)
-    final[food][:count] +=1
-   end
-  end
- end
-binding.pry
+ new_cart = {}
+ cart.each do |item|
+ binding.pry  
+ end   
 end
 
 
