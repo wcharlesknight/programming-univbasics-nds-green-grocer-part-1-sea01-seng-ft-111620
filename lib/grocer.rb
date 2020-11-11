@@ -18,14 +18,14 @@ def consolidate_cart(cart)
  new_cart = {}
  cart.each do |item_list|
    item_list.each do |item, value|
-     new_cart[item] ||= value 
+     new_cart[item] ||= value
+     binding.pry 
      if new_cart[item][:count]
        new_cart[item][:count] +=1
      else
        new_cart[item][:count] = 1
      end 
    end
-   binding.pry 
  end 
 end 
 
