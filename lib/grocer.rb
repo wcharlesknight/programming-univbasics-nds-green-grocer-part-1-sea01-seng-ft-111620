@@ -18,8 +18,8 @@ def consolidate_cart(cart)
   new_cart = cart.each_with_object([]) do |(item) , new|
    if !new[:item]
     new[:count] = 1
+    binding.pry 
    end
-   binding.pry 
   end
 end
 
