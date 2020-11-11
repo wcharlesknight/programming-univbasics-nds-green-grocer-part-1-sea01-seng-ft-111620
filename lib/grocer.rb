@@ -21,9 +21,9 @@ def consolidate_cart(cart)
     if cart[index][:item] != new_cart
       new_cart << cart[index]
     end
+    index += 1 
   end
-  binding.pry
-  index += 1 
+  binding.pry 
 end
 
 
