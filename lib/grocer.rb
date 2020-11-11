@@ -19,7 +19,7 @@ def consolidate_cart(cart)
    if !new_cart[:item]
     new_cart[:count] = 1
    else
-     new_cart[:count] += 1 
+    new_cart[:count] += 1 
    end
    new_cart 
   end
